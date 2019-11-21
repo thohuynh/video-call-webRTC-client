@@ -1,0 +1,31 @@
+{
+  "name": "video-call-webRTC-client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:thohuynh/video-call-webRTC-client.git",
+  "author": "Tho Huynh <tho.hd@workhouse.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "build": "webpack --config webpack.config.js",
+    "serve": "node index.js"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "jquery": "^3.4.1",
+    "nodemon": "^1.19.4",
+    "simple-peer": "^9.6.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "pm2": "^4.1.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
